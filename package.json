@@ -1,0 +1,6 @@
+{
+  "description": "Solarlized Dark",
+  "version": "0.1.0",
+  "theme": "syntax",
+  "styleSheets": ["solarized.less"]
+}
