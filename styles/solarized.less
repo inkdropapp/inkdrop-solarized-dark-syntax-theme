@@ -22,59 +22,70 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     color: @base05;
     background-color: @base00;
     text-shadow: @base00 0 1px;
-  }
 
-  .CodeMirror .CodeMirror-widget {
-    text-shadow: none;
-  }
+    .cm-header { color: @base-yellow; }
+    .cm-quote { color: @base05; }
 
-  .CodeMirror .cm-header { color: @base-yellow; }
-  .CodeMirror .cm-quote { color: @base05; }
+    .cm-keyword { color: @base-orange; }
+    .cm-atom { color: @base-magenta; }
+    .cm-number { color: @base-magenta; }
+    .cm-def { color: @base-cyan; }
 
-  .CodeMirror .cm-keyword { color: @base-orange; }
-  .CodeMirror .cm-atom { color: @base-magenta; }
-  .CodeMirror .cm-number { color: @base-magenta; }
-  .CodeMirror .cm-def { color: @base-cyan; }
+    .cm-variable { color: @base04; }
+    .cm-variable-2 { color: @base-yellow; }
+    .cm-variable-3 { color: @base-violet; }
 
-  .CodeMirror .cm-variable { color: @base04; }
-  .CodeMirror .cm-variable-2 { color: @base-yellow; }
-  .CodeMirror .cm-variable-3 { color: @base-violet; }
+    .cm-property { color: @base-cyan; }
+    .cm-operator { color: @base-violet; }
 
-  .CodeMirror .cm-property { color: @base-cyan; }
-  .CodeMirror .cm-operator { color: @base-violet; }
+    .cm-comment { color: @base03; font-style:italic; }
 
-  .CodeMirror .cm-comment { color: @base03; font-style:italic; }
+    .cm-string { color: @base-green; }
+    .cm-string-2 { color: @base-yellow; }
 
-  .CodeMirror .cm-string { color: @base-green; }
-  .CodeMirror .cm-string-2 { color: @base-yellow; }
+    .cm-meta { color: @base-green; }
+    .cm-qualifier { color: @base-yellow; }
+    .cm-builtin { color: @base-magenta; }
+    .cm-bracket { color: @base-orange; }
+    .CodeMirror-matchingbracket { color: @base-green; }
+    .CodeMirror-nonmatchingbracket { color: @base-red; }
+    .cm-tag { color: @base05; }
+    .cm-attribute { color: @base-cyan; }
 
-  .CodeMirror .cm-meta { color: @base-green; }
-  .CodeMirror .cm-qualifier { color: @base-yellow; }
-  .CodeMirror .cm-builtin { color: @base-magenta; }
-  .CodeMirror .cm-bracket { color: @base-orange; }
-  .CodeMirror .CodeMirror-matchingbracket { color: @base-green; }
-  .CodeMirror .CodeMirror-nonmatchingbracket { color: @base-red; }
-  .CodeMirror .cm-tag { color: @base05; }
-  .CodeMirror .cm-attribute { color: @base-cyan; }
-  /*
-  .CodeMirror .cm-hr {
-    color: transparent;
-    border-top: 1px solid @base02;
-    display: block;
-  }
-  */
-  .CodeMirror .cm-link { color: @base05; cursor: pointer; }
-  .CodeMirror .cm-special { color: @base-violet; }
-  .CodeMirror .cm-em {
-    color: #999;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
-  .CodeMirror .cm-strong { color: #eee; }
-  .CodeMirror .cm-error,
-  .CodeMirror .cm-invalidchar {
-    color: @base02;
-    border-bottom: 1px dotted @base-red;
+    .CodeMirror-widget {
+      text-shadow: none;
+    }
+
+    /*
+    .cm-hr {
+      color: transparent;
+      border-top: 1px solid @base02;
+      display: block;
+    }
+    */
+    .cm-link { color: @base05; cursor: pointer; }
+    .cm-special { color: @base-violet; }
+    .cm-em {
+      color: #999;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+    .cm-strong { color: #eee; }
+    .cm-error,
+    .cm-invalidchar {
+      color: @base02;
+      border-bottom: 1px dotted @base-red;
+    }
+    .cm-whitespace::before {
+      color: @base03;
+      opacity: 0.4;
+    }
+
+    // carriage return
+    .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
+      color: @base03;
+      opacity: 0.4;
+    }
   }
 
   .CodeMirror div.CodeMirror-selected { background: @base01; }
