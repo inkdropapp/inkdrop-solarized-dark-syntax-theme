@@ -55,12 +55,16 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     }
 
     .cm-hr { color: @base-yellow; }
-    .cm-link { color: @base-cyan; }
+    .cm-link, .cm-url {
+      color: @base-cyan;
+      text-underline-position: under;
+    }
     .cm-special { color: @base-violet; }
     .cm-em {
       color: #999;
       text-decoration: underline;
       text-decoration-style: dotted;
+      text-underline-position: under;
     }
     .cm-strong { color: #eee; }
     .cm-error,
