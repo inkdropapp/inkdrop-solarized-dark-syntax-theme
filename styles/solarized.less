@@ -45,8 +45,13 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     .cm-qualifier { color: @base-yellow; }
     .cm-builtin { color: @base-magenta; }
     .cm-bracket { color: @base-orange; }
-    .CodeMirror-matchingbracket { color: @base-green; }
-    .CodeMirror-nonmatchingbracket { color: @base-red; }
+    .CodeMirror-matchingbracket {
+      color: @base-green !important;
+      background-color: @base06;
+    }
+    .CodeMirror-nonmatchingbracket {
+      color: @base-red !important;
+    }
     .cm-tag { color: @base05; }
     .cm-attribute { color: @base-cyan; }
 
@@ -147,7 +152,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   Active line. Negative margin compensates left padding of the text in the
   view-port
   */
-  .CodeMirror .CodeMirror-activeline-background {
+  .CodeMirror .CodeMirror-activeline-background, .CodeMirror .CodeMirror-activeline-gutter {
     background: rgba(255, 255, 255, 0.10) !important;
   }
   .CodeMirror-activeline .CodeMirror-linenumber {
