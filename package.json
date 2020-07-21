@@ -2,10 +2,11 @@
   "version": "1.0.0",
   "name": "solarized-dark-syntax",
   "description": "Solarlized Dark",
-  "version": "0.1.0",
   "theme": "syntax",
-  "styleSheets": ["solarized.less"],
+  "styleSheets": [
+    "solarized.less"
+  ],
   "engines": {
-    "inkdrop": "^4.x"
+    "inkdrop": "^5.x"
   }
 }
