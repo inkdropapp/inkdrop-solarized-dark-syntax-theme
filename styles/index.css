@@ -182,7 +182,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     }
 
     div.CodeMirror-selected {
-      background: var(--base01);
+      background-color: hsla(192, 100%, 4%, 0.5);
     }
     .CodeMirror ::selection {
       background: rgba(7, 54, 66, 0.99);
