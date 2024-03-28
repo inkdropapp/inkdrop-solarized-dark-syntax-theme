@@ -4,7 +4,7 @@
   "description": "Solarlized Dark",
   "theme": "syntax",
   "styleSheets": [
-    "solarized.less"
+    "index.css"
   ],
   "engines": {
     "inkdrop": "^5.x"
