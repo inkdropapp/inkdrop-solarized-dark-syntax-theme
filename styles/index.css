@@ -32,6 +32,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     color: var(--base05);
     background-color: var(--base00);
     text-shadow: var(--base00) 0 1px;
+    --fat-cursor-color: var(--base06);
 
     /* Little shadow on the view-port of the buffer view */
     box-shadow: inset 7px 0 12px -6px #000;
