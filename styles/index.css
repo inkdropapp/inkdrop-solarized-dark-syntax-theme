@@ -26,16 +26,14 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   --base-magenta: #d33682;
 
   /* Color scheme for code-mirror */
-  .CodeMirror {
+  .CodeMirror,
+  .mde-preview .codeblock pre {
     color-scheme: dark;
 
     color: var(--base05);
     background-color: var(--base00);
     text-shadow: var(--base00) 0 1px;
     --fat-cursor-color: var(--base06);
-
-    /* Little shadow on the view-port of the buffer view */
-    box-shadow: inset 7px 0 12px -6px #000;
 
     .cm-header {
       color: var(--base-yellow);
